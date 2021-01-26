@@ -1,0 +1,45 @@
+*,*::after, *::before{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3f5080;
+    margin:0;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrument{
+    display: flex;
+}
+
+.key{
+    border:1px black solid;
+    height:calc(var(--width)*4);
+    width:var(--width);
+}
+
+.white.active{
+    background-color: rgb(202, 198, 193);
+}
+
+.black.active{
+    background-color: rgb(95, 87, 87);
+}
+
+.white{
+    --width:100px;
+    background-color: cornsilk;
+}
+
+.black{
+    --width:60px;
+    background-color:#222;
+    margin-left: calc(var(--width)/-2);
+    margin-right: calc(var(--width)/-2);
+    z-index:2;  
+}
+
